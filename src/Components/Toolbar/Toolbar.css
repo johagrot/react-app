@@ -1,0 +1,41 @@
+.toolbar{
+    background-color: #333; /* Background color of the toolbar */
+    overflow: hidden; /* Ensure the toolbar content doesn't overflow */
+    position: fixed;
+    width: 100%; /* Ensure the toolbar spans the entire width of the viewport */
+    top: 0; /* Stick the toolbar to the top of the viewport */
+    z-index: 1000; /* Ensure the toolbar appears above other content */
+}
+
+.content {
+    padding-top: 50px; /* Adjust this value to match the height of your toolbar */
+}
+
+
+.toolbar ul{
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar li{
+    float: left; /* Float the list items to create a horizontal layout */
+}
+
+.toolbar li a{
+    display: block;
+    color: white; /*text color of the link*/
+    text-align: center;
+    padding: 14px 16px; /* Padding around the links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Change the background color of the link when hovered */
+.toolbar li a:hover{
+    background-color: #111;
+}
+
+.new-button{
+    margin-top: 50px;
+}
+

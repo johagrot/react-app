@@ -1,0 +1,34 @@
+.app {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.app-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.person-container {
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.new-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.new-button:hover {
+  background-color: #0056b3;
+}
+
