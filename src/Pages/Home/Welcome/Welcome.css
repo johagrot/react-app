@@ -1,0 +1,22 @@
+body {
+    background-image: url('./background.jpg');
+    background-size: cover; /* Adjusts the background image size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+
+
+.greenLetter {
+    color: green;
+}
+
+.whiteLetter {
+    color: white;
+}
+
+.redLetter {
+    color: red;
+}
+
+.welcomeImage{
+}

@@ -1,41 +1,56 @@
-.toolbar{
-    background-color: #333; /* Background color of the toolbar */
-    overflow: hidden; /* Ensure the toolbar content doesn't overflow */
+/* Lobster Font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.toolbarContainer {
+    /* background: linear-gradient(to right, #00FF00, #FFFFFF, #FF0000, #000000); */
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
     position: fixed;
-    width: 100%; /* Ensure the toolbar spans the entire width of the viewport */
-    top: 0; /* Stick the toolbar to the top of the viewport */
-    z-index: 1000; /* Ensure the toolbar appears above other content */
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
 }
 
-.content {
-    padding-top: 50px; /* Adjust this value to match the height of your toolbar */
+.toolbar{
+    position: absolute;
+    bottom: 0px;
 }
 
-
-.toolbar ul{
-    list-style-type: none; /* Remove default list styles */
+.toolbar ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /*Use flexbox*/
 }
 
-.toolbar li{
-    float: left; /* Float the list items to create a horizontal layout */
+.toolbar li {
+    margin: 0 10px; /* Add some spacing between the links */
 }
 
-.toolbar li a{
+.toolbar li a {
+    font-family: "lobster", cursive;
     display: block;
-    color: white; /*text color of the link*/
+    color: white;
     text-align: center;
-    padding: 14px 16px; /* Padding around the links */
-    text-decoration: none; /* Remove underline from links */
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-/* Change the background color of the link when hovered */
-.toolbar li a:hover{
-    background-color: #111;
+.toolbar li a:hover {
+    background-color: #918f8f;
 }
 
-.new-button{
-    margin-top: 50px;
+.pageName {
+    position: absolute;
+    /* top: 0%; Adjust as needed */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
 }
-
